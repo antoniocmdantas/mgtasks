@@ -5,6 +5,7 @@ import {
     EntityDetailsComponent, ShowLineComponent,
     ListingTableComponent
 } from 'angularm';
+import { CustomEntityLineComponent } from "app/widgets/custom.listing.table.component";
 
 export let defineRules = (angularm: AngularmService) => {
     angularm
@@ -12,7 +13,7 @@ export let defineRules = (angularm: AngularmService) => {
         .dptr('form_line', FormLineComponent, { inputType: 'text' })
         .dpr('show_line', ShowLineComponent)
         .detr('list_entities', ListingTableComponent)
-        .der('table_line', EntityLineComponent)
+        .der('table_line', CustomEntityLineComponent)
         .der('show_entity', EntityDetailsComponent)
         .detr('create_form', CreateEntityComponent)
         .der('edit_form', EditEntityFormComponent)
