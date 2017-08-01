@@ -20,6 +20,8 @@ import { TableHeaderComponent } from "./widgets/table.header";
 import { TableCellComponent } from "./widgets/table.cell";
 import { CellEntityLineComponent } from "./widgets/cell.entity.line";
 import { CssListTableComponent } from "./widgets/css.list.table";
+import { CustomTableHeaderComponent } from "app/widgets/custom.table.header";
+import { CustomTableCellComponent } from "app/widgets/custom.table.cell";
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -37,7 +39,9 @@ const appRoutes: Routes = [
     CssListTableComponent,
     TableHeaderComponent,
     CellEntityLineComponent,
-    TableCellComponent
+    TableCellComponent,
+    CustomTableHeaderComponent,
+    CustomTableCellComponent
   ],
   imports: [
     CommonModule,
@@ -66,7 +70,9 @@ const appRoutes: Routes = [
     CssListTableComponent,
     TableHeaderComponent,
     CellEntityLineComponent,
-    TableCellComponent
+    TableCellComponent,
+    CustomTableHeaderComponent,
+    CustomTableCellComponent
   ],
   bootstrap: [AppComponent]
 })
